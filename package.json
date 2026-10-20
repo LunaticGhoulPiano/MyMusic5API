@@ -1,0 +1,33 @@
+{
+    "name": "mymusic5-api",
+    "version": "0.1.0",
+    "description": "An unofficial read-only MyMusic5 REST API and library with a shared core.",
+    "type": "module",
+    "license": "Apache-2.0",
+    "engines": {
+        "node": ">=22"
+    },
+    "exports": {
+        ".": {
+            "types": "./src/index.d.ts",
+            "import": "./src/index.js"
+        },
+        "./http": {
+            "types": "./src/http/index.d.ts",
+            "import": "./src/http/index.js"
+        }
+    },
+    "bin": {
+        "mymusic5-api": "./src/cli.js"
+    },
+    "files": ["src", "README.md", "LICENSE"],
+    "scripts": {
+        "start": "node src/cli.js",
+        "test": "node --test test/*.test.js",
+        "test:live": "node scripts/verify-live.mjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LunaticGhoulPiano/MyMusic5API.git"
+    }
+}
