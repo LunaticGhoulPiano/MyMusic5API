@@ -2,6 +2,8 @@
 
 An unofficial, read-only [MyMusic5](https://www.mymusic5.com/) REST API and JavaScript library, sharing one core. Requires Node.js 22 or newer.
 
+Read the [documentation](https://lunaticghoulpiano.github.io/documentations/mymusic5-api/) for setup, API reference, and examples.
+
 ## Run the HTTP API
 
 ```sh
